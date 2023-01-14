@@ -5,4 +5,18 @@
 int main(void)
 {
 	printf("Congratulations!");
+	printf("Congratulations!");
+	printf("Congratulations!");
+	printf("Congratulations!");
+	printf("Congratulations!");
+	printf("Congratulations!");
+	printf("Congratulations!");
+	printf("Congratulations!");
+	printf("Congratulations!");
+	printf("Congratulations!");
+	printf("Congratulations!");
+	printf("Congratulations!");
+	printf("Congratulations!");
+	printf("Congratulations!");
+	return 0;
 }
