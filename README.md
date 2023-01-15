@@ -131,4 +131,8 @@ int main(void)
 [bilibili弹幕网](https://www.bilibili.com "进入B站")<br>
 [Github](https://github.com "进入GitHub")<br>
 
-![壁纸截图](C:\Users\Aelous\Pictures\老相册\bili\\8.jpg "图片")
+![壁纸截图](C:\Users\Aelous\Pictures\老相册\bili\8.jpg "图片")
+
+![壁纸截图](https://m.qpic.cn/psc?/V51ixxtZ4ZqEWc2t5ADK46bYU21N8nql/ruAMsa53pVQWN7FLK88i5qpxEMFIYohVTKnWA2UZGW6D.LV0wWeB19f7.b6BL7SCrR3OZ0yLA4iZsgFhQ*2GM1Stb3AMYGZ70BpD5O4m6RE!/b&bo=ewK2BAAAAAABB.s!&rf=viewer_4 "图片")
+
+###上传的图片地址不允许是本地图片地址，将本地的图片上传到某个图片网站，生成一个 图片的网络地址(URL),用网络地址，github就可以生成出来了
