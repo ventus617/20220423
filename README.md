@@ -41,3 +41,93 @@
 >>>三级引用文本
 >>>>四级引用文本
 
+##列表
+
+####有序列表
+
+1. 进程知识
+    1. 进程间通信
+         1. 管道
+         2. MMAP
+         3. 消息队列
+    2. 进程关系
+         1. 子进程
+         2. 父进程
+    3. 进程安全
+2. 线程相关
+3. 信号相关
+4. 网络相关
+
+####无序列表
+
+* 进程知识
+  * 进程间通信
+    * 管道
+    * MMAP
+    * 消息队列
+  * 进程关系
+    * 子进程
+    * 父进程
+  * 进程安全
+* 线程相关
+* 信号相关
+* 网络相关
+
+####混合列表
+
+* 热门游戏
+   1. 鹅鸭杀
+   2. CSGO
+   3. 道德与法治5
+   4. 王者荣耀
+
+1.获奖游戏
+  * GTA
+  * FIFA23
+  * 原神
+
+##表格
+
+游戏名(居左)|游戏价格(居中)|游戏评分(居中)|游戏热度(居右)|
+--|:--:|:--:|--:
+GTA|299|90|75%
+FIFA23|299|95|85%
+原神|10|75|90%
+
+##代码片段
+
+```c
+#include<stdio.h>
+#include<unistd.h>
+#include<string.h>
+int main(void)
+{
+	printf("test output...\n");
+	return 0;
+}
+```
+
+```bash
+	git add filename
+	git rm filename
+	git remote add origin SSH_address
+	echo "数据回显"
+```
+
+```cpp
+	//C++代码片段
+```
+
+```python
+	import os;
+	#python的代码片段
+```
+
+```java
+	//java代码片段
+```
+##插入图片和链接
+[bilibili弹幕网](https://www.bilibili.com "进入B站")<br>
+[Github](https://github.com "进入GitHub")<br>
+
+![壁纸截图](C:\Users\Aelous\Pictures\老相册\bili\\8.jpg "图片")
