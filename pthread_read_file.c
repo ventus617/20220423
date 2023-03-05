@@ -68,6 +68,10 @@ void * pthread_find(void*arg)
 		if((strstr(bufferA,"E CamX")!=NULL)||(strstr(bufferA,"E CHIUSECASE")!=NULL))
 		{
 			//写缓冲区B   B的写和读是同步的，不是单独分开执行的，他会读A缓冲区，写入B缓冲区，B的写并不需要C的同步，仅需要互斥缓冲区B就能工作了
+			//也就是说 ABC模型 A和B同步 B和C同步 B的操作是读写一起进行的 A来引导B的运行 如果C运行过快则B线程会因为被互斥而阻塞挂起（既不读也不写）
+			//直到C运行完成后，由于buffer被清空 导致C挂起释放互斥锁 B则可以继续写入，写完后来唤醒C
+			//这个模型即传递读写功能,属于经典生产者消费者问题，注意这里B既是生产者也是消费者，但B是由A来唤醒消费功能，再执行生产功能来唤醒C，C是消费者，消费完成后告诉B
+			//A和B是生产者消费者，由于B被A唤醒，因此不需要C的介入，即仅需要B来唤醒C即可
 			pthread_mutex_lock(&lockB);
 			strcpy(bufferB,bufferA);
 			pthread_cond_signal(&B_empty);
